@@ -1,0 +1,157 @@
+#NodesContainer {
+    display: flex;
+    flex-direction:  column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.PathfinderNode {
+    background-color: lightgray;
+    outline: 1px solid black;
+/*    height: 1fr;*/
+}
+
+.StartNode {
+    background-color: greenyellow;
+    opacity: 0.5;
+}
+
+.TargetNode {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.Wall {
+    background-color: darkgray;
+}
+
+.Unvisited {
+    background-color: seagreen;
+}
+
+.Visited {
+    background-color: turquoise;
+}
+
+.Path {
+    background-color: yellow;
+}
+
+#Pathfinder {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Start {
+    background-color: lightseagreen;
+    width: 10vw;
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Start:hover {
+    background-color: mediumseagreen;
+}
+
+.Stop {
+    background-color: indianred;
+}
+
+.Stop:hover {
+    background-color: orangered;
+}
+
+.ResetGrid {
+    background-color: cadetblue;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 10vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ResetGrid:hover {
+    background-color: seagreen;
+}
+
+#ButtonToolbar {
+    display: flex;
+    height: 10vh;
+    background-color: darkblue;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.Pathfind {
+    width: 10vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pathfind:hover {
+    background-color: steelblue;
+}
+
+.CurrentPathfind {
+    color: yellow;
+}
+
+.SizeSpeedContainer {
+    width: 17vw;
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.LabelSlider {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#NodePalette {
+    width: 10vw;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.PaletteDrawer {
+    width: 10vw;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PaletteDrawer:hover {
+    background-color: steelblue;
+}
+
+.CurrentPaletteDrawer {
+    color: yellow;
+}
