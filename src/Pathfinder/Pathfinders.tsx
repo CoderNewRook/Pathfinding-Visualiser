@@ -74,7 +74,7 @@ export function dijkstras(nodes: PathfinderNode[][], start: PathfinderNode, targ
         });
 
         if (animIndices.length > 0) {
-            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited"), colorChange(animIndices, "Unvisited")]));
+            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited")]));
         }
     }
     if (targetFound) {
@@ -142,7 +142,7 @@ export function astar(nodes: PathfinderNode[][], start: PathfinderNode, target: 
         });
 
         if (animIndices.length > 0) {
-            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited"), colorChange(animIndices, "Unvisited")]));
+            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited")]));
         }
     }
     if (targetFound) {
@@ -211,7 +211,7 @@ export function breadthfirstsearch(nodes: PathfinderNode[][], start: PathfinderN
         });
 
         if (animIndices.length > 0) {
-            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited"), colorChange(animIndices, "Unvisited")]));
+            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited")]));
         }
     }
     if (targetFound) {
@@ -279,7 +279,7 @@ export function bestfirstsearch(nodes: PathfinderNode[][], start: PathfinderNode
         });
 
         if (animIndices.length > 0) {
-            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited"), colorChange(animIndices, "Unvisited")]));
+            animations.push(createColorChanges([colorChange([flatNodes.indexOf(current)], "Visited")]));
         }
     }
     if (targetFound) {
